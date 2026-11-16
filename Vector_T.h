@@ -19,15 +19,12 @@ concept Numeric =
  && !std::same_as<T, char8_t>
  && !std::same_as<T, char16_t>
  && !std::same_as<T, char32_t>;
-
-
 template <Numeric T>
 class Vector{
 private:
     T* data_ = nullptr;
     size_type size_ = 0;
     size_type capacity_ = 0; 
-
 public:
     using iterator = VectorIterator<T>;
     using const_iterator = VectorIterator<const T>;

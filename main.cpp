@@ -2,6 +2,9 @@
 #include <algorithm>
 #include "Vector_T.h"
 
+
+
+
 // Печать вектора через итераторы
 void print(const Vector<int>& v) {
     std::cout << "[ ";
@@ -17,6 +20,7 @@ void printTimesTen(int x) {
 }
 
 int main() {
+    
     // Создание вектора и добавление элементов
     std::cout << "1. push_back\n";
     Vector<int> v;
